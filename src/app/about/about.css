@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5 {
     font-weight: bold;
 }
 
+.yellowColor {
+    background-color: #f0c040;
+}
+
 .about-section {
     p {
         font-size: 1.1rem;
@@ -40,7 +44,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .photographer-details strong {
-        color: #0d6efd;
+        color: black;
         font-weight: 600;
         margin-right: 0.5rem;
         display: inline-block;
