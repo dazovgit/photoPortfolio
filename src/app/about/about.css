@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+
+.about-section {
+    p {
+        font-size: 1.1rem;
+    }
+    
+    img {
+        min-height: 300px;
+        object-fit: cover;
+    }
+    
+    .card-title {
+        font-weight: bold;
+    }
+
+    /* Combined info card styling */
+    .photographer-info-card {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .photographer-info-card .card-header {
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding: 1.2rem;
+    }
+
+    .photographer-info-card .card-body {
+        padding: 2.5rem;
+    }
+
+    .photographer-details p {
+        margin-bottom: 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+
+    .photographer-details strong {
+        color: #0d6efd;
+        font-weight: 600;
+        margin-right: 0.5rem;
+        display: inline-block;
+        min-width: 80px;
+    }
+
+    /* Photo styling within card */
+    .photographer-photo {
+        max-height: 250px;
+        width: 100%;
+        max-width: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .photographer-photo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+}

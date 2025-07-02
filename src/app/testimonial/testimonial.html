@@ -1,0 +1,29 @@
+<div class="testimonials-page">
+  <div class="intro">
+    <p>
+      It doesn't matter if you are an industry leading company or a single
+      person, you will receive 100% the best service I offer. Below you will
+      find opinions of people who I worked for and also some of the companies I
+      have done business with in the past.
+    </p>
+  </div>
+
+  <div class="testimonials">
+    <div class="testimonial-card" *ngFor="let user of testimonials">
+      <h3>{{ user.name }}</h3>
+      <p>{{ user.text }}</p>
+      <p>Date: {{ user.date }}</p>
+      <p>Rating: {{ user.rating }} stars</p>
+    </div>
+  </div>
+
+  <h2>Companies I have worked with:</h2>
+
+  <div class="brands">
+    <div class="brand" *ngFor="let brand of brands">
+      <img [src]="brand.img" [alt]="brand.alt" />
+      <span>{{ brand.label }}</span>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,28 @@
+<div class="container">
+    <h3 class="text-center mb-4 dancing-script"> <i class="fa-solid fa-trophy text-warning me-2"></i>Awards and Achievements</h3>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <ul class="list-group shadow">
+
+                <li class="list-group-item d-flex justify-content-between align-items-center"
+                 *ngFor="let award of awards; let i = index">
+
+                 <span>
+                    <ng-container [ngSwitch]="i">
+                        <span *ngSwitchCase="0"></span>
+                        <span *ngSwitchCase="1"></span>
+                        <span *ngSwitchCase="2"></span>
+                        <span *ngSwitchDefault></span>
+                    </ng-container>
+                    <i class="fa-solid fa-medal me-2" [ngClass]="'text-' + award.color"></i>{{ award.title}}
+                 </span>
+
+                 <span class="badge rounded-pill text-light" [ngClass]=" 'bg-' + award.color">
+                    {{ award.year}}
+                 </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

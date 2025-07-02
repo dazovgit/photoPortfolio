@@ -1,0 +1,52 @@
+<div class="container about-section" style="margin-top: 7rem;">
+    <h2 class="text-center mb-5">About the Photographer</h2>
+    <div class="row justify-content-center g-4">
+        <!-- Combined info card with photo -->
+        <div class="col-md-10">
+            <div class="card shadow-lg border-primary photographer-info-card">
+                <div class="card-header bg-primary text-white text-center">
+                    <strong>Photographer Details</strong>
+                </div>
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <!-- Text Content -->
+                        <div class="col-md-6">
+                            <div class="photographer-details">
+                                <p><strong>Name:</strong> {{ photographer.name }}</p>
+                                <p><strong>From:</strong> {{ photographer.origin }}</p>
+                                <p><strong>Location:</strong> {{ photographer.location }}</p>
+                            </div>
+                        </div>
+                        <!-- Photo -->
+                        <div class="col-md-6 text-center">
+                            <img src="./groom.jpg" class="img-fluid rounded shadow photographer-photo" alt="Photographer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+          <!-- Bio and Philosophy -->
+
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h4 class="card-title">Bio</h4>
+                        <p class="card-text"> {{ photographer.bio}}</p>
+
+                        <h4 class="card-title mt-4">My Philosophy</h4>
+                        <p class="card-text">{{ photographer.philosophy}}</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        <!-- Awards -->
+        <div class="row mt-5">
+            <div class="col">
+                <app-awards></app-awards>
+
+            </div>
+        </div>
+</div>

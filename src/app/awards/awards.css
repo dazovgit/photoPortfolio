@@ -1,0 +1,38 @@
+.container {
+    margin-top: 100px; /* top space*/
+    min-height: calc(100vh - 200px); /* Minimum height */
+    padding: 20px;
+}
+
+.fa-medal {
+    font-size: 1.4rem;
+}
+
+.dancing-script {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px !important;
+}
+
+.list-group {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.list-group-item:last-child {
+    border-bottom: none;
+}
